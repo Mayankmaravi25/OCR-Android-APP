@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         textToSpeech =new TextToSpeech(this, status ->{
             if(status == TextToSpeech.SUCCESS)
             {
-                textToSpeech.setLanguage(Locale.US);
+                textToSpeech.setLanguage(Locale.ENGLISH);
 
             }
             else {
@@ -92,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
             imageView.setImageBitmap(imageBitmap);
             recognizeTextFromImage();
         }
+
     }
 
     private void recognizeTextFromImage() {
